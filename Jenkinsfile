@@ -18,4 +18,12 @@ pipeline {
             }
         }
     }
+    post {
+        always {
+            echo 'Post action'
+        }
+        failure {
+            mail to: vsamanullah@gmail.com, subject: 'The Pipeline failed :'
+        }
+    }
 }
