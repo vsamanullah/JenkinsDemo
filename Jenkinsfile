@@ -21,6 +21,7 @@ pipeline {
     post {
         always {
                 echo 'Post action for jenkins'
+                echo 'One more Post action for jenkins'
             }
         }
 }
